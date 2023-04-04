@@ -1,0 +1,337 @@
+.c-footer-top img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+
+.c-footer-bottom{
+  background: #0C125D; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #0C125D 0%, #0C125D 49%, #0C125D 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #0C125D 0%,#0C125D 49%,#0C125D 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0C125D 0%,#0C125D 49%,#0C125D 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.c-footer-main-nav{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e4f2fe+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #e4f2fe 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#e4f2fe 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#e4f2fe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4f2fe',GradientType=0 ); /* IE6-9 */
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.c-footer-nav-box {
+  display: flex;
+}
+
+.c-footer-nav-box_icon {
+  background-color: white;
+}
+
+.c-footer-nav-box_title {
+  font-family: "ABCArizonaMix";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.c-footer-nav-box_link {
+  font-family: "ABCArizonaMix";
+  font-weight: bold;
+}
+
+.c-footer-section {
+  @apply max-w-7xl;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: auto;
+  padding: 35px;
+  position: relative;
+  margin-top: -45px;
+  margin-bottom: -25px;
+  z-index: 1;
+}
+.c-footer-section-left {
+  display: flex;
+  width: calc(50% + 30px)
+}
+
+
+.c-footer-section-right {
+  width: calc(50% - 30px);
+  padding-left: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-footer-logo {
+  width: 120px;
+
+  img, svg{
+    width: 120px;
+  }
+}
+.c-footer-logo_icon {
+  width: 120px;
+  height: 105px;
+}
+
+.c-footer-content {
+  padding-left: 25px;
+  width: calc(100% - 120px);
+  padding-right: 30px;
+}
+.c-footer-college-info,
+.c-footer-address {
+  font-style: LibreFranklin;
+  font-size: 15px;
+  color: #262626;
+  padding-bottom: 15px;
+
+  p{
+    max-width: 400px;
+    line-height: 28px;
+    font-size: 15px;
+  }
+}
+
+.c-footer-address{
+
+  p{
+    font-size: 12px;
+  }
+
+}
+.c-footer-section__bottom {
+  height: 78px;
+  width: 100%;
+  background-color: #0B48E4;
+}
+.c-footer-social-links {
+  display: flex;
+  margin-left: -10px;
+  margin-bottom: 30px !important;
+}
+.c-footer-social-links a {
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 0px;
+}
+.c-footer-conditions {
+  display: flex;
+  justify-content: space-between;
+  font-style: LibreFranklin;
+  font-size: 12px;
+  width: 100%;
+  align-self: flex-end;
+  color: #0B48E4;
+  text-decoration: underline;
+}
+.c-footer-conditions :last-child{
+  display: none;
+}
+.c-footer-nav-box_social {
+  height: 21px;
+  width: 27px;
+  align-self: flex-start;
+}
+
+.c-footer-page-links {
+  font-style: LibreFranklin;
+  font-size: 15px;
+  width: 100%;
+  color: #0B48E4;
+}
+
+.c-footer-section-devider {
+  border-right: 3px dashed #FFC300;
+}
+
+.c-footer-bottom-devider {
+  @apply max-w-7xl;
+  border-bottom: 3px dashed #FFC300;
+  margin: auto;
+  padding-top: 45px;
+}
+
+.c-prefooter{
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 1400px){
+
+  .c-prefooter__contain .c-prefooter__links a{
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px){
+
+  .c-prefooter__contain .c-prefooter__links a{
+    font-size: 20px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+}
+
+
+@media screen and (max-width: 1140px){
+
+  .c-footer-logo{
+    width: 75px;
+  }
+
+  .c-footer-content{
+
+    width: calc(100% - 75px);
+    padding-right: 20px;
+
+    .c-footer-conditions{
+
+      a{
+        /* width: 50%; */
+        white-space: nowrap;
+        margin-right: calc(15px / 2);
+        padding-right: calc(15px / 2);
+        border-right: 1px solid blue;
+
+        &:last-of-type{
+          border-right: 0px;
+        }
+      }
+
+      span{
+        display: none;
+      }
+
+    }
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 1080px){
+
+  .c-footer-conditions{
+    flex-wrap: wrap;
+
+    a{
+      width: calc(50% - calc(15px / 2));
+      padding-bottom: calc(15px / 2);
+
+      &:nth-of-type(even){
+        border-right: 0px;
+      }
+
+      &:nth-of-type(3), &:nth-of-type(4){
+        padding-bottom: 0px;
+      }
+
+    }
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 900px){
+
+  .c-prefooter__contain{
+    padding-bottom: 60px;
+  }
+
+  .c-iconlist-wrapper{
+    padding: 0px 30px !important;
+  }
+
+
+
+
+}
+
+
+@media screen and (max-width: 890px){
+
+  .c-footer-section{
+    display: block;
+    width: calc(100% - 60px);
+  }
+
+  .c-footer-section-left{
+    width: 100%;
+    display: block;
+  }
+
+  .c-footer-content{
+    padding: 0px;
+  }
+
+  .c-footer-section-devider{
+    display: none;
+  }
+
+  .c-footer-section-right{
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 20px;
+    border-top: 2px dashed #ffc300;
+  }
+
+  .c-footer-logo{
+    margin-bottom: 30px;
+  }
+
+  .c-footer-content{
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .c-footer-conditions{
+    display: block;
+
+    a{
+      display: inline-block;
+      width: auto;
+      border-right: 0px !important;
+    }
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px){
+
+  .c-footer-page-links{
+    display: block !important;
+    position: relative;
+    grid-template-columns: none;
+
+    a{
+      display: block;
+      position: relative;
+    }
+  }
+
+}

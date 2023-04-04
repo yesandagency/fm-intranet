@@ -1,0 +1,35 @@
+{% from "macros/svg.html" import svg %} {% from "macros/cta.html" import ctaIcon %}
+<!-- DEV NOTE: `watch-scroll` only needs to be present on homepage -->
+<the-header class="the-header fixed top-0 left-0 z-20 w-full bg-white">
+  <div class="header-gradient"></div>
+  <div class="flex m-auto justify-between items-center max-w-7xl header-contents">
+
+      <a href="/">
+        <span class="sr-only">Franklin & Marshall</span>
+          <img class="w-28 md:w-211 md:h-10 fill-brand-primary" alt="icon" src="/_resources/images/images/header-logo.svg"/>
+      </a>
+
+
+    <the-header-nav resource-title="{{ header.menuUtility.title }}">
+      <template v-slot:menu>
+        <div class="">
+          <nav id="menu-primary" class="">{% include "components/header-menu-desktop.html" %}</nav>
+        </div>
+
+
+      </template>
+
+      {% set headerSearchInputId = 'header-search-input' %}
+      <template v-slot:hamburgermenu>
+        <div class="hamburger-menu">
+          <div class="hamburger-menu-contents">
+            {% include "components/hamburger-menu.html" %}
+          </div>
+        </div>
+      </template>
+
+
+    </the-header-nav>
+  </div>
+</the-header>
+

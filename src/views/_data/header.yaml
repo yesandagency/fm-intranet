@@ -1,0 +1,160 @@
+
+hamburgerMenu:
+- title: Information For
+  links:
+  - label: Alumni
+    href: /
+  - label: Current Students
+    href: /
+  - label: Prospective Students
+    href: /
+  - label: Faculty & Staff
+    href: /
+  - label: Surrounding Community
+    href: /
+  - label: Prospective Employees
+    href: /
+  - label: Parents & Family
+    href: /
+- title: Helpful Links
+  links:
+  - label: Search Campus
+    href: /
+  - label: Campus Map
+    href: /
+  - label: Emergency
+    href: /
+  - label: Information
+    href: /
+
+menuPrimary:
+  - heading: Finance & Admin
+    href: /
+    links:
+      - label: New Student Orientation
+        href: /
+      - label: Registration
+        href: /
+      - label: Tuition
+        href: /
+      - label: Financial Aid
+        href: /
+      - label: Testing
+        href: /
+  - heading: Academic Affairs
+    href: /
+    links:
+      - label: Programs & Courses
+        href: /
+      - label: Academic Advising
+        href: /
+      - label: Academic Calendar
+        href: /
+      - label: Locations
+        href: /
+      - label: Honors Institute
+        href: /
+  - heading: Student Affairs
+    href: /
+    links:
+      - label: Bookstore
+        href: /
+      - label: Libraries
+        href: /
+      - label: Club & Activities
+        href: /
+      - label: Graduation
+        href: /
+      - label: Career Center
+        href: /
+      - label: Disability Services
+        href: /
+  - heading: College Houses
+    href: /
+    links:
+      - label: Athletics
+        href: /
+      - label: Events
+        href: /
+      - label: Foundation
+        href: /
+      - label: Corporate College
+        href: /
+      - label: For Employers
+        href: /
+  - heading: Institutional
+    href: /
+    links:
+      - label: Faculty & Staff Directory
+        href: /
+      - label: Leadership
+        href: /
+      - label: Board of Trustees
+        href: /
+      - label: Careers
+        href: /
+      - label: Contact Collin
+        href: /
+
+
+utilityMenu:
+  - heading: ""
+    links:
+      - label: Apply
+        href: /
+      - label: Give
+        href: /
+      - label: Request Info
+        href: /
+search:
+  placeholder: Enter your search terms here
+  url: search.html
+topPages:
+  groups:
+    - links:
+        - label: Apply
+          href: /
+        - label: Registration Information
+          href: /
+        - label: Academic Calendar
+          href: /
+        - label: Tuition
+          href: /
+        - label: B.A. Programs
+          href: /
+        - label: Program Guide
+          href: /
+    - heading: Current Student
+      links:
+        - label: Sample Link One
+          href: /
+        - label: Sample Link Two
+          href: /
+        - label: Sample Link Three
+          href: /
+        - label: Sample Link Four
+          href: /
+    - heading: Future Student
+      links:
+        - label: Apply
+          href: /
+        - label: Registration Information
+          href: /
+        - label: Academic Calendar
+          href: /
+        - label: Tuition
+          href: /
+        - label: B.A. Programs
+          href: /
+        - label: Program Guide
+          href: /
+    - heading: Faculty or Staff Member
+      links:
+        - label: Staff Link One
+          href: /
+        - label: Staff Link Two
+          href: /
+        - label: Staff Link Three
+          href: /
+
+

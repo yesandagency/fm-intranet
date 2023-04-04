@@ -1,0 +1,114 @@
+---
+layout: main.html
+bodyClass: homepage
+components:
+
+- name: hero-slim
+  heading: 'College Policies'
+  breadcrumbs:
+    - title: Home
+      link: '#'
+    - title: Student Affairs
+      link: '#'
+
+- name: three-up-feature
+  title: 'Student Health and Wellness'
+  kind: 'standard'
+  cards:
+    - title: 'Student Wellness Center'
+      copy: 'A fully integrated center that provides accessible, confidential, high quality medical and mental health services for students.'
+      image: '/_resources/images/images/three-up-card-image-4.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'DipCares: Mental Health Aid & More'
+      copy: 'Many students face difficult times during college. Unexpected life events, personal crisis, mental health struggles, financial issues, or academic difficulties are all examples of challenges that can interfere with a student’s success during their college years.'
+      image: '/_resources/images/images/three-up-card-image-5.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'Student Wellness Education and Violence Prevention'
+      copy: 'The Office of Student Wellness Education and Violence Prevention (WE-VP) provides education for students, staff and faculty on wellness related topics and violence prevention.   '
+      image: '/_resources/images/images/three-up-card-image-6.png'
+      link: '#'
+      linkcaption: 'Read More'
+
+- name: fifty-fifty
+  type1: 'fifty-fifty-type-card'
+  card1: 'true'
+  image1: '/_resources/images/images/three-up-card-image-4.png'
+  caption1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.'
+  link1: '#'
+  linkCaption1: Read More
+
+  type2: 'fifty-fifty-type-card'
+  card2: 'true'
+  image2: '/_resources/images/images/three-up-card-image-4.png'
+  caption2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.'
+  link2: '#'
+  linkCaption2: Read More
+
+- name: call-to-action
+  title: 'Call to Action'
+  caption: 'Lorem ipsum dolor sit amet, consetetur sadipscing.'
+  subcaption: 'In an emergency, call 911 or contact the Department of Public Safety (DPS)  at 717-358-3939.'
+  link: '#'
+
+- name: fifty-fifty
+  type1: 'fifty-fifty-type-card'
+  card1: 'true'
+  image1: '/_resources/images/images/three-up-card-image-4.png'
+  caption1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.'
+  link1: '#'
+  linkCaption1: Read More
+
+  type2: 'fifty-fifty-type-card'
+  card2: 'true'
+  image2: '/_resources/images/images/three-up-card-image-4.png'
+  caption2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.'
+  link2: '#'
+  linkCaption2: Read More
+
+- name: quicklinks
+  title: 'Have you found what you’re looking for? <br/>If not, here are some helpful pages:'
+  background: 'dark'
+  description: '
+  Lorem sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  '
+  list:
+    - caption: 'In Depth Info about the Major'
+      url: '#'
+    - caption: 'Environmental Studies Courses'
+      url: '#'
+    - caption: 'Lorem ipsum dolor amet consectetur'
+      url: '#'
+    - caption: 'Lorem ipsum dolor sit amet'
+      url: '#'
+    - caption: 'Lorem ipsum dolor eu viverra'
+      url: '#'
+    - caption: 'Lorem ipsum dolor sit amet'
+      url: '#'
+
+
+- name: fifty-fifty
+  type1: 'fifty-fifty-type-cta'
+  cta1: 'true'
+  caption1: '<h3>Public Safety</h3><p>The Franklin & Marshall College Department of Public Safety (DPS) is an Accredited Law Enforcement Agency. DPS works around the clock to maintain a safe atmosphere for faculty, staff, students and visitors and ensure the F&M community is a safe one for living and learning.</p>'
+  link1: '#'
+  linkCaption1: Read More
+
+  type2: 'fifty-fifty-type-cta'
+  cta2: 'true'
+  caption2: '<h3>Emergency Medical Services</h3><p>Franklin & Marshall Emergency Medical Service is a Basic Life Support (BLS) unit licensed by the Pennsylvania Department of Health. It provides emergency response to the members of F&M and the surrounding Lancaster City community.</p>'
+  link2: '#'
+  linkCaption2: Read More
+
+
+
+
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

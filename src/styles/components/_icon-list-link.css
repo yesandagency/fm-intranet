@@ -1,0 +1,79 @@
+.c-iconlist-wrapper{
+  padding-bottom: 50px !important;
+}
+
+.c-iconlist-header {
+  font-size: 16px !important;
+  font-family: "LibreFranklin";
+  font-weight: 300;
+  color: #F0D066;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: none;
+}
+
+.c-iconlist-link {
+  font-family: "LibreFranklin";
+  font-size: 16px;
+  font-weight: 500;
+  color: #0B48E4;
+  text-transform: uppercase;
+
+  svg{
+    margin-left: 10px;
+    display: inline;
+    position: relative;
+  }
+}
+.c-iconlist-icon {
+  width: fit-content;
+
+  .c-iconlist-default{
+    display: block;
+  }
+
+  .c-iconlist-hover{
+    display: none;
+  }
+
+}
+
+a:hover{
+
+  .c-iconlist-icon{
+
+    .c-iconlist-default{
+      display: none;
+    }
+
+    .c-iconlist-hover{
+      display: block;
+    }
+
+  }
+
+}
+
+.c-iconlist-content {
+  display: flex;
+  justify-content: center;
+}
+
+
+.c-iconlist-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-iconlist-text__inner {
+  padding: 15px 0;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1280px){
+
+  .c-iconlist-wrapper{
+    padding: 0px 30px;
+  }
+
+}

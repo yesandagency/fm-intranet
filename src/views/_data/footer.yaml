@@ -1,0 +1,44 @@
+title: Collin College
+desc: Founded in 1787, Franklin & Marshall College is a residential college dedicated to excellence in undergraduate liberal education.
+copyright: © 2022 Franklin & Marshall College. All Rights Reserved.
+footerLinks:
+  - linkTitle: MyDiplomat Student
+    href: /
+  - linkTitle: MyDiplomat Employee
+    href: /
+  - linkTitle: The Ampersand
+    href: /
+socialLinks:
+  - title: facebook
+    href: /
+  - title: twitter
+    href: /
+  - title: instagram
+    href: /
+  - title: youtube
+    href: /
+  - title: linkedin
+    href: /
+footerConditionlinks:
+  - title: SITE MAP
+    href: /
+  - title: PRIVACY POLICY
+    href: /
+  - title: ACCESSIBILITY
+    href: /
+  - title: TERMS OF USE
+    href: /
+linksPrimary:
+  - label: F&M Public Site
+    href: /
+  - label: Bell & Tower
+    href: /
+  - label: MyDiplomat
+    href: /
+  - label: People Search
+    href: /
+  - label: Calendar
+    href: /
+  - label: Contact
+    href: /
+

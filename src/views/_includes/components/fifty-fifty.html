@@ -1,0 +1,129 @@
+<div class="c-fifty-fifty {% if data.background %} bg-{{ data.background }} {% endif %} {% if data.special %} special-split {% endif %}">
+  <div class="c-fifty-fifty-wrapper">
+
+    {% if data.title %}
+    <div class="c-fifty-fifty-title">
+      <h2>{{ data.title }}</h2>
+    </div>
+    {% endif %}
+
+    <div class="c-fifty-fifty-container">
+      <div class="{{ data.type1 }}">
+
+        {% if data.video1 %}
+
+          <!-- DEV NOTE: Only supports youtube embed. Any youtube url should work for the `youtube-url` prop -->
+          <video-player tabindex="0" title="Alt Text" youtube-url="{{ data.youtube }}" thumbnail-url="{{ data.thumbnail }}" thumbnail-alt="Alt Text" role="presentation"></video-player>
+
+        {% endif %}
+
+        {% if data.html1 %}
+
+          {{ data.html1 | safe }}
+
+          {% if data.link1 %}
+          <div class="clearfix"></div>
+          <a class="button"  href="{{ data.link1 }}">{{ data.linkCaption1 }} {% include '../../../assets/images/images/arrow-right-black.svg' %}</a>
+          {% endif %}
+
+        {% endif %}
+
+        {% if data.image1 %}
+
+          <div class="fifty-fifty-image" style="background: url('{{ data.image1 }}') center center no-repeat; background-size: cover;">
+
+          </div>
+
+        {% endif %}
+
+        {% if data.card1 %}
+
+          <div class="fifty-fifty-type-card">
+            <div class="fifty-fifty-type-card-image" style="background: url('{{ data.image1 }}') center center no-repeat; background-size: cover;"></div>
+            <div class="fifty-fifty-type-card-caption">
+            {{ data.caption1 | safe }}
+            </div>
+            {% if data.link1 %}
+            <div class="fifty-fifty-type-card-cta">
+              <a href="{{ data.link1 }}">{{ data.linkCaption1 }} {% include '../../../assets/images/images/arrow-right-blue.svg' %}</a>
+            </div>
+            {% endif %}
+          </div>
+
+        {% endif %}
+
+        {% if data.cta1 %}
+
+            <div class="fifty-fifty-type-cta-caption">
+            {{ data.caption1 | safe }}
+            </div>
+            {% if data.link1 %}
+            <div class="fifty-fifty-type-cta-cta">
+              <a href="{{ data.link1 }}">{{ data.linkCaption1 }} {% include '../../../assets/images/images/arrow-right-black.svg' %}</a>
+            </div>
+            {% endif %}
+
+        {% endif %}
+
+      </div><div class="{{ data.type2 }}">
+
+        {% if data.video2 %}
+
+          <!-- DEV NOTE: Only supports youtube embed. Any youtube url should work for the `youtube-url` prop -->
+          <video-player tabindex="0" title="Alt Text" youtube-url="{{ data.youtube }}" thumbnail-url="{{ data.thumbnail }}" thumbnail-alt="Alt Text" role="presentation"></video-player>
+
+        {% endif %}
+
+        {% if data.html2 %}
+
+          {{ data.html2 | safe }}
+
+          {% if data.link2 %}
+          <div class="clearfix"></div>
+          <a class="button"  href="{{ data.link2 }}">{{ data.linkCaption2 }} {% include '../../../assets/images/images/arrow-right-black.svg' %}</a>
+          {% endif %}
+
+        {% endif %}
+
+        {% if data.image2 %}
+
+          <div class="fifty-fifty-image" style="background: url('{{ data.image2 }}') center center no-repeat; background-size: cover;">
+
+          </div>
+
+        {% endif %}
+
+        {% if data.card2 %}
+
+          <div class="fifty-fifty-type-card">
+            <div class="fifty-fifty-type-card-image" style="background: url('{{ data.image2 }}') center center no-repeat; background-size: cover;"></div>
+            <div class="fifty-fifty-type-card-caption">
+            {{ data.caption2 | safe }}
+            </div>
+            {% if data.link2 %}
+            <div class="fifty-fifty-type-card-cta">
+              <a href="{{ data.link2 }}">{{ data.linkCaption2 }} {% include '../../../assets/images/images/arrow-right-blue.svg' %}</a>
+            </div>
+            {% endif %}
+          </div>
+
+        {% endif %}
+
+        {% if data.cta2 %}
+
+
+            <div class="fifty-fifty-type-cta-caption">
+            {{ data.caption2 | safe }}
+            </div>
+            {% if data.link2 %}
+            <div class="fifty-fifty-type-cta-cta">
+              <a href="{{ data.link2 }}">{{ data.linkCaption2 }} {% include '../../../assets/images/images/arrow-right-black.svg' %}</a>
+            </div>
+            {% endif %}
+
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,13 @@
+
+
+<section class="c-cta-wrapper">
+  <div class="c-cta-container">
+    <h2>{{ data.caption }}</h2>
+    {% if data.subcaption %}
+    <p>{{ data.subcaption }}</p>
+    {% endif %}
+    <a href="{{ data.link }}" class="c-cta-text">
+      {{data.title}} {% include '../../../assets/images/images/arrow-right-black.svg' %}
+    </a>
+  </div>
+</section>

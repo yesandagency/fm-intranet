@@ -1,0 +1,58 @@
+{% from "macros/svg.html" import svg %}
+{% from "macros/icon-list-link.html" import iconLink %}
+<footer class="c-footer">
+
+  <div class="c-footer-bottom">
+    <div class="c-footer-main-nav">
+    {{ iconLink(footer.footerLinks) }}
+    </div>
+    <div class="c-footer-section">
+      <div class="c-footer-section-left">
+        <div class="c-footer-logo">
+          <img class="w-100 h-100" alt="icon" src="/_resources/images/images/footer-logo.svg"/>
+        </div>
+        <div class="c-footer-content">
+          <div class="c-footer-college-info">
+            <p>{{ footer.desc }}</p>
+          </div>
+
+          <div class="c-footer-social-links mb-3">
+            {% for social in footer.socialLinks %}
+              <a href="{{social.href}}">{{ social.title }}
+                {{ svg(social.title, 'c-footer-nav-box_social inline-block mb-1') }}
+              </a>
+            {% endfor %}
+
+          </div>
+          <div class="c-footer-address">
+          <p>{{ footer.copyright }}</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="c-footer-section-devider">
+      </div>
+      <div class="c-footer-section-right">
+        <div class="c-footer-page-links grid gap-4 grid-cols-2">
+            {% for link in footer.linksPrimary %}
+              <a href="{{link.href}}">
+                {{link.label}}
+              </a>
+            {% endfor %}
+        </div>
+        <div class="c-footer-conditions">
+          {% for condition in footer.footerConditionlinks %}
+            <a href="{{condition.href}}">
+              {{condition.title}}
+            </a>
+             <span>|</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="c-footer-section__bottom">
+      <div class="c-footer-bottom-devider">
+      </div>
+    </div>
+  </div>
+</footer>

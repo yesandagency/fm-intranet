@@ -1,0 +1,28 @@
+---
+layout: main.html
+links:
+
+  - title: Home
+    href: /home.html
+  - title: Health & Wellness at F&M (Resource Template)
+    href: /resource-template.html
+  - title: Weiss College House (College Template)
+    href: /college-template.html
+
+---
+
+<div class="background-white">
+  <div class="container">
+    <div class="p-10 md:pt-6 md:px-20 bg-white shadow-blue">
+      {% for item in links %}
+      <div class="py-5 border-b-2 border-blue-ash">
+        <a
+          class="text-24 font-regular text-blue hover:underline"
+          href="{{ item.href }}"
+          >{{ item.title }}</a
+        >
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

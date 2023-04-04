@@ -1,0 +1,83 @@
+---
+layout: main.html
+bodyClass: homepage
+components:
+
+  - name: hero-landing
+    image: '/_resources/images/images/bg-program-listing.png'
+    heading: 'Welcome to Weis College House!'
+    breadcrumbs:
+      - title: Home
+        link: '#'
+      - title: College Houses
+        link: '#'
+    paragraph: 'Our motto is socii mundi, translated as compatriots with an interest in the world.  It is our call to join together in our House community to pursue knowledge and truth. Weis House Best House!'
+
+  - name: fifty-fifty
+    background: 'light'
+    type1: 'fifty-fifty-type-image'
+    image1: '/_resources/images/images/lancaster-1.png'
+    type2: 'fifty-fifty-type-html'
+    html2: '<h2>Weiss House Calendar</h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    link2: '#'
+    linkCaption2: CTA
+
+  - name: video
+    carousel: 'true'
+    subtitle: Happy seniors applaud their classmates during the degree-conferring portion of the program at Commencement 2022.
+    youtube: 'https://www.youtube.com/watch?v=qWHm-ZqkHB4'
+
+  - name: stat-block-standard
+    title: 'Main Title'
+    border: 'yellow'
+    subtitle: 'Secondary Titling'
+    paragraph: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    '
+    linktitle: 'Call to Action'
+    link: '#'
+    statistics:
+      - numeral: 12
+        caption: Testing the captions out with varying lengths
+      - numeral: 34
+        caption: Testing the captions out once again
+      - numeral: 56
+        caption: Testing a shorter one
+      - numeral: 78
+        caption: Testing out a far longer, verbose, perhaps "superfluous" caption to ensure responsiveness
+
+  - name: three-up-feature
+    title: 'F&M Stories'
+    kind: 'news'
+    cards:
+      - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-7.png'
+        link: '#'
+        linkcaption: 'Read More'
+      - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-8.png'
+        link: '#'
+        linkcaption: 'Read More'
+      - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-9.png'
+        link: '#'
+        linkcaption: 'Read More'
+    cta:
+      - caption: 'View More Stories'
+        url: '#'
+
+
+
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

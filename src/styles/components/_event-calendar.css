@@ -1,0 +1,103 @@
+.c-event-calendar{
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0 auto 50px;
+
+  &-container{
+    margin: 0 auto;
+    max-width: 80rem;
+    text-align: center;
+
+    a{
+      display: inline-block;
+      padding: 0px 30px;
+      background: #FFC300;
+      text-transform: uppercase;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50px;
+
+      svg{
+        display: inline;
+        position: relative;
+        margin-left: 10px;
+      }
+
+    }
+
+    h2{
+      font-size: 45px;
+      text-align: center;
+      font-weight: 700;
+      color: #0C125D;
+      font-family: "ABCArizonaMix";
+      margin-bottom: 45px;
+    }
+
+  }
+
+  &--events{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  &--event{
+    display: flex;
+    position: relative;
+    width: calc(50% - 30px);
+    margin-right: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    &-date{
+      background: #E2F0FE;
+      height: 120px;
+      width: 120px;
+      border-radius: 120px;
+      display: flex;
+
+      p{
+        font-size: 16px;
+        text-transform: uppercase;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        align-self: center;
+
+        span{
+          display: block;
+          position: relative;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 40px;
+        }
+      }
+
+    }
+
+    &-description{
+      width: calc(100% - 120px);
+      position: relative;
+      padding-left: 30px;
+      align-self: center;
+      font-size: 14px;
+      text-align: left;
+
+      strong{
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: block;
+        position: relative;
+      }
+
+    }
+
+  }
+
+}

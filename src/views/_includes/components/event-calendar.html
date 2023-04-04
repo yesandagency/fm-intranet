@@ -1,0 +1,23 @@
+<div class="c-event-calendar">
+  <div class="c-event-calendar-container">
+    <h2>{{ data.title }}</h2>
+
+    <div class="c-event-calendar--events">
+      {% for event in data.events %}
+
+      <div class="c-event-calendar--event">
+        <div class="c-event-calendar--event-date">
+          <p>{{ event.eventMonth }}<span>{{ event.eventDay }}</span></p>
+        </div><div class="c-event-calendar--event-description">
+          <p><strong>{{ event.title }}</strong></p>
+          <p>{{ event.description }}</p>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+
+    <a href="{{ data.ctaLink }}" class="btn-cta-yellow">{{ data.ctaTitle }} {% include '../../../assets/images/images/arrow-right-black.svg' %}</a>
+
+  </div>
+</div>
