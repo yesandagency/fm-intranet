@@ -19,8 +19,8 @@
     h2{
       color: #ffc300;
       font-family: "ABCArizonaMix";
-      font-size: 45px;
-      line-height: 56px;
+      font-size: 35px;
+      line-height: 48px;
       margin-bottom: 30px;
     }
   }
@@ -57,6 +57,15 @@
 
       a{
         font-weight: 700;
+
+        svg{
+          display: inline;
+          margin-left: calc(15px / 2);
+
+          path{
+            fill: white;
+          }
+        }
       }
     }
 
@@ -68,18 +77,24 @@
 
 
 .c-quick-links.bg-light{
-  background: #F9F9F9;
+  background: #FFFFFF;
 
   .c-quick-links-title h2{
     color: #0C125D;
   }
 
   .c-quick-links-description p{
-    color: #0c125d;
+    color: #262626;
   }
 
   .c-quick-links__list li a{
-    color: #0c125d;
+    color: #0B48E4;
+
+    svg{
+      path{
+        fill: #0B48E4;
+      }
+    }
   }
 
 }

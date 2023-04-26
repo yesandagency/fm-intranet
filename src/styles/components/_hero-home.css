@@ -208,9 +208,9 @@
 
 @media screen and (max-width: 768px){
 
-  .c-hero-home-hero{
+  /* .c-hero-home-hero{
     align-items: flex-start !important;
-  }
+  } */
 
   .c-iconlist-container{
     display: block !important;
@@ -240,10 +240,13 @@
   }
 
   .c-header-home__content h1{
-    line-height: 56px;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 30px;
     margin-bottom: 0px;
+
+    span{
+      font-size: 40px;
+    }
   }
 
   .c-header-home__content p{

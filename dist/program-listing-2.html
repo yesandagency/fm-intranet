@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Franklin & Marshall College</title>
+
+    <!-- DEV NOTE: Staging only - remove in production -->
+    <meta name="robots" content="noindex" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/pwb1gdv.css" />
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+
+  <!-- DEV NOTE: Homepage <body> tag needs class of `home` for nav to work correctly -->
+  <body class="landing">
+    <!-- DEV NOTE: Vue uses this div with `id="app"` to mount. All pages need this div/id wrapping all page content for javascript to function properly -->
+    <div id="app" v-cloak>
+      <!-- DEV NOTE: `watch-scroll` only needs to be present on homepage -->
+      <the-header class="the-header fixed top-0 left-0 z-20 w-full bg-white">
+        <div class="header-gradient"></div>
+        <div class="flex m-auto justify-between items-center max-w-7xl header-contents">
+          <a href="/">
+            <span class="sr-only">Franklin & Marshall</span>
+            <img class="w-28 md:w-211 md:h-10 fill-brand-primary" alt="icon" src="/_resources/images/images/header-logo.svg" />
+          </a>
+
+          <the-header-nav resource-title="">
+            <template v-slot:menu>
+              <div class="">
+                <nav id="menu-primary" class="">
+                  <app-accordion tag="div" class="">
+                    <ul class="flex gap-10 justify-start">
+                      <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
+                        <a class="peer block c-header-menu-nav" href="/"> Finance &amp; Admin </a>
+
+                        <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block">
+                          <ul class="absolute block c-header-menu-content p-25">
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> New Student Orientation </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Registration </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Tuition </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Financial Aid </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Testing </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
+                        <a class="peer block c-header-menu-nav" href="/"> Academic Affairs </a>
+
+                        <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block">
+                          <ul class="absolute block c-header-menu-content p-25">
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Programs &amp; Courses </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Academic Advising </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Academic Calendar </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Locations </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Honors Institute </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
+                        <a class="peer block c-header-menu-nav" href="/"> Student Affairs </a>
+
+                        <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block">
+                          <ul class="absolute block c-header-menu-content p-25">
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Bookstore </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Libraries </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Club &amp; Activities </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Graduation </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Career Center </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Disability Services </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
+                        <a class="peer block c-header-menu-nav" href="/"> College Houses </a>
+
+                        <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block">
+                          <ul class="absolute block c-header-menu-content p-25">
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Athletics </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Events </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Foundation </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Corporate College </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> For Employers </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
+                        <a class="peer block c-header-menu-nav" href="/"> Institutional </a>
+
+                        <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block">
+                          <ul class="absolute block c-header-menu-content p-25">
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Faculty &amp; Staff Directory </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Leadership </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Board of Trustees </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Careers </a>
+                            </li>
+
+                            <li class="text-14">
+                              <a class="pt-6 pb-6 block tet" href="/"> Contact Collin </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </app-accordion>
+                </nav>
+              </div>
+            </template>
+
+            <template v-slot:hamburgermenu>
+              <div class="hamburger-menu">
+                <div class="hamburger-menu-contents">
+                  <app-accordion tag="div" class="">
+                    <div class="c-hamburger-contain">
+                      <form class="flex items-end" action="search.html" method="GET">
+                        <div class="w-full c-search-contain">
+                          <label for="header-search-input">Search</label>
+                          <input
+                            name="q"
+                            title="header-search-input"
+                            id="header-search-input"
+                            class="w-full h-14 md:h-16 lg:h-20 placeholder-white text-18 md:text-24 leading-1 font-semibold bg-transparent focus:bg-blue-navy focus:bg-opacity-50 border-0 border-b-2 border-blue focus:ring-transparent transition-colors"
+                            type="text"
+                            placeholder="Enter your search terms here"
+                          />
+
+                          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5839 7.1544C12.5839 10.3899 10.1118 12.9194 7.17428 12.9194C4.23678 12.9194 1.76465 10.3899 1.76465 7.1544C1.76465 3.91895 4.23678 1.3894 7.17428 1.3894C10.1118 1.3894 12.5839 3.91895 12.5839 7.1544Z" stroke="#004088" stroke-width="2" />
+                            <line y1="-1" x2="5.60802" y2="-1" transform="matrix(0.701349 0.712818 -0.674001 0.73873 11.3994 11.613)" stroke="#004088" stroke-width="2" />
+                          </svg>
+                        </div>
+                      </form>
+
+                      <div class="c-hamburger-primary-menu">
+                        <h3>Information For</h3>
+
+                        <ul class="c-hamburger-menu-link-list">
+                          <li><a href="/">Alumni</a></li>
+
+                          <li><a href="/">Current Students</a></li>
+
+                          <li><a href="/">Prospective Students</a></li>
+
+                          <li><a href="/">Faculty &amp; Staff</a></li>
+
+                          <li><a href="/">Surrounding Community</a></li>
+
+                          <li><a href="/">Prospective Employees</a></li>
+
+                          <li><a href="/">Parents &amp; Family</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="c-hamburger-primary-menu">
+                        <h3>Helpful Links</h3>
+
+                        <ul class="c-hamburger-menu-link-list">
+                          <li><a href="/">Search Campus</a></li>
+
+                          <li><a href="/">Campus Map</a></li>
+
+                          <li><a href="/">Emergency</a></li>
+
+                          <li><a href="/">Information</a></li>
+                        </ul>
+                      </div>
+
+                      <ul class="utility-menu">
+                        <li>
+                          <a href="/">Apply &raquo;</a>
+                        </li>
+
+                        <li>
+                          <a href="/">Give &raquo;</a>
+                        </li>
+
+                        <li>
+                          <a href="/">Request Info &raquo;</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </app-accordion>
+                </div>
+              </div>
+            </template>
+          </the-header-nav>
+        </div>
+      </the-header>
+
+      <main id="main" class="mt-16 md:mt-20">
+        <!-- BEGIN COMPONENT:  -->
+        <section class="relative hero c-hero-landing">
+          <!-- DEV NOTE: If background image is not set by user in the CMS, it should use default: `/_resources/images/background.jpg` -->
+          <!-- <img alt="" aria-hidden="true" src="/_resources/images/background.jpg" class="adhere object-cover object-top"> -->
+          <div class="c-hero-landing-pattern"></div>
+          <div class="c-hero-landing--container">
+            <div class="c-hero-landing--content">
+              <h1><span>Applying to F&amp;M</span></h1>
+
+              <div class="c-hero-landing--mobile-image-background">
+                <div style="background: url('/_resources/images/images/lancaster-1.png') center center no-repeat; background-size: cover"></div>
+              </div>
+              <div class="c-hero-landing--breadcrumb-description">
+                <p>Do you think F&M is the right fit for you? If the answer is ‘yes,’ learn how to take the next step and apply.</p>
+              </div>
+            </div>
+            <div class="c-hero-landing--image">
+              <div class="c-hero-landing--image-background" style="background: url('/_resources/images/images/lancaster-1.png') center center no-repeat; background-size: cover"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="c-hero-slim-breadcrumbs">
+          <a href="#">Home</a> <span>/</span>
+
+          <a href="#">Admissions &amp; Aid</a> <span>/</span>
+
+          <p>Applying to F&amp;M</p>
+        </div>
+        <!-- END COMPONENT:  -->
+
+        <!-- BEGIN COMPONENT:  -->
+        <div class="c-fifty-fifty">
+          <div class="c-fifty-fifty-wrapper">
+            <div class="c-fifty-fifty-title">
+              <h2>Start Your Application</h2>
+            </div>
+
+            <div class="c-fifty-fifty-container">
+              <div class="fifty-fifty-type-html">
+                <p>F&M accepts applications from one of two sources: the Common Application or the Coalition Application. These platforms allow you to streamline your application process and apply to multiple colleges at once.</p>
+                <a href="#" class="button">Begin Your Common Application &raquo;</a> <a href="#" class="button">Begin Your Coalition Application &raquo;</a>
+              </div>
+              <div class="fifty-fifty-type-html">
+                <h3>Application Dates to Remember</h3>
+                <div class="application-table">
+                  <div>Early Decision I</div>
+                  <div>November 15 (Notified by Dec 15)</div>
+                  <div>Early Decision II</div>
+                  <div>January 15 (Notified by Feb 15)</div>
+                  <div>Regular decision</div>
+                  <div>January 15 (Notified by April 1)</div>
+                  <div>Transfer (Fall)</div>
+                  <div>April 15* (Notified by June 1)</div>
+                  <div>Transfer (Spring)</div>
+                  <div>November 15 (Notified by Dec 15)</div>
+                </div>
+                <p>*Applications received after the priority deadline are considered on a space-available basis until the class is full. You are encouraged to complete your application as soon as possible.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END COMPONENT:  -->
+
+        <!-- BEGIN COMPONENT:  -->
+        <div class="c-accordion-block">
+          <div class="c-accordion-block-wrapper">
+            <div class="c-accordion-block-title">
+              <h2>Application Options</h2>
+            </div>
+
+            <div class="c-accordion__contents">
+              <div class="c-accordion__contents-copy one-col">
+                <div class="c-accordion__heading">
+                  <h3>
+                    Applying Early Decision
+
+                    <span class="c-accordion__expand">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.68359 6.98364H15.1211V9.13989H8.68359V15.7961H6.51172V9.13989H0.105469V6.98364H6.51172V0.296143H8.68359V6.98364Z" fill="#004088" />
+                      </svg>
+
+                      <span class="c-accordion__contract">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.503906" y="7.12018" width="15.125" height="2.15625" fill="black" />
+                        </svg>
+                      </span>
+                    </span>
+                  </h3>
+                  <div class="c-accordion__description">
+                    <div class="c-accordion__description-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-accordion__contents-copy one-col">
+                <div class="c-accordion__heading">
+                  <h3>
+                    Applying Regular Decision
+
+                    <span class="c-accordion__expand">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.68359 6.98364H15.1211V9.13989H8.68359V15.7961H6.51172V9.13989H0.105469V6.98364H6.51172V0.296143H8.68359V6.98364Z" fill="#004088" />
+                      </svg>
+
+                      <span class="c-accordion__contract">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.503906" y="7.12018" width="15.125" height="2.15625" fill="black" />
+                        </svg>
+                      </span>
+                    </span>
+                  </h3>
+                  <div class="c-accordion__description">
+                    <div class="c-accordion__description-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-accordion__contents-copy one-col">
+                <div class="c-accordion__heading">
+                  <h3>
+                    Applying as a Transfer
+
+                    <span class="c-accordion__expand">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.68359 6.98364H15.1211V9.13989H8.68359V15.7961H6.51172V9.13989H0.105469V6.98364H6.51172V0.296143H8.68359V6.98364Z" fill="#004088" />
+                      </svg>
+
+                      <span class="c-accordion__contract">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.503906" y="7.12018" width="15.125" height="2.15625" fill="black" />
+                        </svg>
+                      </span>
+                    </span>
+                  </h3>
+                  <div class="c-accordion__description">
+                    <div class="c-accordion__description-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-accordion__contents-copy one-col">
+                <div class="c-accordion__heading">
+                  <h3>
+                    Applying as an International Student
+
+                    <span class="c-accordion__expand">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.68359 6.98364H15.1211V9.13989H8.68359V15.7961H6.51172V9.13989H0.105469V6.98364H6.51172V0.296143H8.68359V6.98364Z" fill="#004088" />
+                      </svg>
+
+                      <span class="c-accordion__contract">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.503906" y="7.12018" width="15.125" height="2.15625" fill="black" />
+                        </svg>
+                      </span>
+                    </span>
+                  </h3>
+                  <div class="c-accordion__description">
+                    <div class="c-accordion__description-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-accordion__contents-copy one-col">
+                <div class="c-accordion__heading">
+                  <h3>
+                    Standardized Testing Options
+
+                    <span class="c-accordion__expand">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.68359 6.98364H15.1211V9.13989H8.68359V15.7961H6.51172V9.13989H0.105469V6.98364H6.51172V0.296143H8.68359V6.98364Z" fill="#004088" />
+                      </svg>
+
+                      <span class="c-accordion__contract">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.503906" y="7.12018" width="15.125" height="2.15625" fill="black" />
+                        </svg>
+                      </span>
+                    </span>
+                  </h3>
+                  <div class="c-accordion__description">
+                    <div class="c-accordion__description-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-accordion__contents-copy one-col">
+                <div class="c-accordion__heading">
+                  <h3>
+                    Special Application Opportunities
+
+                    <span class="c-accordion__expand">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.68359 6.98364H15.1211V9.13989H8.68359V15.7961H6.51172V9.13989H0.105469V6.98364H6.51172V0.296143H8.68359V6.98364Z" fill="#004088" />
+                      </svg>
+
+                      <span class="c-accordion__contract">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.503906" y="7.12018" width="15.125" height="2.15625" fill="black" />
+                        </svg>
+                      </span>
+                    </span>
+                  </h3>
+                  <div class="c-accordion__description">
+                    <div class="c-accordion__description-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END COMPONENT:  -->
+
+        <!-- BEGIN COMPONENT:  -->
+        <section class="c-feature-display">
+          <div class="c-feature-display-wrapper">
+            <div class="c-feature-display-contain">
+              <div class="c-feature-display-content">
+                <h2><span></span>Keep Track of What You Need with an Application Checklist</h2>
+
+                <div class="c-feature-display-mobile-image">
+                  <div style="background-image: url(/_resources/images/images/lancaster-1.png); background-position: center center; background-repeat: no-repeat; background-size: cover"></div>
+                </div>
+
+                <p>We understand that this is a lot to remember and track! To help, we put together a step-by-step guide to completing the application process as a first-year applicant. You’ll find valuable information about each of our application requirements.</p>
+
+                <a href="#"
+                  >Check Out the Application Checklist
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                    <path
+                      id="Icon_ionic-ios-arrow-round-forward"
+                      data-name="Icon ionic-ios-arrow-round-forward"
+                      d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z"
+                      transform="translate(-7.875 -11.252)"
+                      fill="#000000"
+                    />
+                  </svg> </a
+                ><br />
+              </div>
+
+              <div class="c-feature-display-image top">
+                <div class="c-feature-display-image-thumbnail">
+                  <div>
+                    <div style="background-image: url(/_resources/images/images/lancaster-small-1.png); background-position: center center; background-repeat: no-repeat; background-size: cover"></div>
+                  </div>
+                </div>
+
+                <div class="c-feature-display-image-large" style="background-image: url(/_resources/images/images/lancaster-1.png); background-position: center center; background-repeat: no-repeat; background-size: cover"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END COMPONENT:  -->
+
+        <!-- BEGIN COMPONENT:  -->
+        <div class="c-fifty-fifty">
+          <div class="c-fifty-fifty-wrapper">
+            <div class="c-fifty-fifty-container">
+              <div class="fifty-fifty-type-image">
+                <div class="fifty-fifty-image" style="background: url('/_resources/images/images/lancaster-1.png') center center no-repeat; background-size: cover"></div>
+              </div>
+              <div class="fifty-fifty-type-html">
+                <h2>Financial Aid</h2>
+                <p>We are committed to making an F&M education affordable for all deserving students. We are one of a select group of colleges and universities that exclusively offers need-based financial aid.</p>
+                <p><a href="#">Learn more about financial aid at F&M,</a> including what financial aid we offer and how we determine financial need.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END COMPONENT:  -->
+      </main>
+
+      <footer class="c-footer">
+        <div class="c-footer-bottom">
+          <div class="c-footer-main-nav">
+            <section>
+              <div class="c-iconlist-wrapper py-11 max-w-full">
+                <div class="c-iconlist-container grid grid-cols-3 grid-flow-col max-w-7xl m-auto">
+                  <a href="/" class="c-iconlist-content">
+                    <div class="c-iconlist-text">
+                      <div class="c-iconlist-text__inner pl-2.5">
+                        <p class="c-iconlist-header text-center text-18"></p>
+                        <p class="c-iconlist-link text-center text-secondary-blue">
+                          MyDiplomat Student
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                            <path
+                              id="Icon_ionic-ios-arrow-round-forward"
+                              data-name="Icon ionic-ios-arrow-round-forward"
+                              d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z"
+                              transform="translate(-7.875 -11.252)"
+                              fill="#0b48e4"
+                            />
+                          </svg>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="/" class="c-iconlist-content">
+                    <div class="c-iconlist-text">
+                      <div class="c-iconlist-text__inner pl-2.5">
+                        <p class="c-iconlist-header text-center text-18"></p>
+                        <p class="c-iconlist-link text-center text-secondary-blue">
+                          MyDiplomat Employee
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                            <path
+                              id="Icon_ionic-ios-arrow-round-forward"
+                              data-name="Icon ionic-ios-arrow-round-forward"
+                              d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z"
+                              transform="translate(-7.875 -11.252)"
+                              fill="#0b48e4"
+                            />
+                          </svg>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="/" class="c-iconlist-content">
+                    <div class="c-iconlist-text">
+                      <div class="c-iconlist-text__inner pl-2.5">
+                        <p class="c-iconlist-header text-center text-18"></p>
+                        <p class="c-iconlist-link text-center text-secondary-blue">
+                          The Ampersand
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                            <path
+                              id="Icon_ionic-ios-arrow-round-forward"
+                              data-name="Icon ionic-ios-arrow-round-forward"
+                              d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z"
+                              transform="translate(-7.875 -11.252)"
+                              fill="#0b48e4"
+                            />
+                          </svg>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="c-footer-section">
+            <div class="c-footer-section-left">
+              <div class="c-footer-logo">
+                <img class="w-100 h-100" alt="icon" src="/_resources/images/images/footer-logo.svg" />
+              </div>
+              <div class="c-footer-content">
+                <div class="c-footer-college-info">
+                  <p>Founded in 1787, Franklin &amp; Marshall College is a residential college dedicated to excellence in undergraduate liberal education.</p>
+                </div>
+
+                <div class="c-footer-social-links mb-3">
+                  <a href="/"
+                    >facebook
+
+                    <svg aria-hidden="true" class="c-footer-nav-box_social inline-block mb-1" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="/_resources/images/images/symbol.svg#facebook" />
+                    </svg>
+                  </a>
+
+                  <a href="/"
+                    >twitter
+
+                    <svg aria-hidden="true" class="c-footer-nav-box_social inline-block mb-1" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="/_resources/images/images/symbol.svg#twitter" />
+                    </svg>
+                  </a>
+
+                  <a href="/"
+                    >instagram
+
+                    <svg aria-hidden="true" class="c-footer-nav-box_social inline-block mb-1" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="/_resources/images/images/symbol.svg#instagram" />
+                    </svg>
+                  </a>
+
+                  <a href="/"
+                    >youtube
+
+                    <svg aria-hidden="true" class="c-footer-nav-box_social inline-block mb-1" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="/_resources/images/images/symbol.svg#youtube" />
+                    </svg>
+                  </a>
+
+                  <a href="/"
+                    >linkedin
+
+                    <svg aria-hidden="true" class="c-footer-nav-box_social inline-block mb-1" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="/_resources/images/images/symbol.svg#linkedin" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="c-footer-address">
+                  <p>© 2022 Franklin &amp; Marshall College. All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+            <div class="c-footer-section-devider"></div>
+            <div class="c-footer-section-right">
+              <div class="c-footer-page-links grid gap-4 grid-cols-2">
+                <a href="/"> F&amp;M Public Site </a>
+
+                <a href="/"> Bell &amp; Tower </a>
+
+                <a href="/"> MyDiplomat </a>
+
+                <a href="/"> People Search </a>
+
+                <a href="/"> Calendar </a>
+
+                <a href="/"> Contact </a>
+              </div>
+              <div class="c-footer-conditions">
+                <a href="/"> SITE MAP </a>
+                <span>|</span>
+
+                <a href="/"> PRIVACY POLICY </a>
+                <span>|</span>
+
+                <a href="/"> ACCESSIBILITY </a>
+                <span>|</span>
+
+                <a href="/"> TERMS OF USE </a>
+                <span>|</span>
+              </div>
+            </div>
+          </div>
+          <div class="c-footer-section__bottom">
+            <div class="c-footer-bottom-devider"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/assets/main.js"></script>
+
+    <!-- DEV NOTE: BEGIN Google CSE (only needs to exist on Search Results page) -->
+    <script async src="https://cse.google.com/cse.js?cx=004005157062119441817%3Ammfncme3bwa"></script>
+    <script>
+      const regex = new RegExp("[\\?&]q=([^&#]*)");
+      let searchQuery = regex.exec(window.location.search);
+      searchQuery = searchQuery === null ? "" : decodeURIComponent(searchQuery[1].replace(/\+/g, " "));
+      const cseInput = document.querySelector(`[data-gse-input]`);
+      if (cseInput) {
+        cseInput.value = searchQuery;
+      }
+    </script>
+    <!-- DEV NOTE: END Google CSE -->
+
+    <!-- DEV NOTE: BEGIN IE support message -->
+    <script>
+      const ua = window.navigator.userAgent;
+      const isIE = /MSIE|Trident/.test(ua);
+      if (isIE) {
+        const message = document.createElement("div");
+        message.classList.add("ie-message");
+        message.innerHTML = '<p class="title-sm">Internet Explorer is not supported on this site.</p><p class="mt-8 body">We recommend upgrading to a <a class="underline" target="_blank" href="https://browsehappy.com/">modern browser</a> for improved security and speed.</p>';
+        document.body.appendChild(message);
+      }
+    </script>
+    <!-- DEV NOTE: END IE support message -->
+
+    <!-- DEV NOTE: BEGIN JS support message -->
+    <noscript>
+      <div class="ie-message">
+        <p class="title-sm">JavaScript is required to view this site.</p>
+        <p class="mt-8 body">Please enable JavaScript to continue browsing.</p>
+      </div>
+    </noscript>
+    <!-- DEV NOTE: END JS support message -->
+  </body>
+</html>

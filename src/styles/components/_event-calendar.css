@@ -7,6 +7,7 @@
   &-container{
     margin: 0 auto;
     max-width: 80rem;
+    padding: 0px 30px;
     text-align: center;
 
     a{
@@ -99,5 +100,19 @@
     }
 
   }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .c-event-calendar{
+
+    &--event{
+      width: 100%;
+      margin-right: 0px;
+    }
+
+  }
+
 
 }

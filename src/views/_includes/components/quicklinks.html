@@ -22,7 +22,7 @@
 
         {% for links in data.list %}
 
-        <li><a href="{{ links.url }}">{{ links.caption }} &raquo;</a></li>
+        <li><a href="{{ links.url }}">{{ links.caption }} {% include '../../../assets/images/images/arrow-right-black.svg' %}</a></li>
 
         {% endfor %}
 

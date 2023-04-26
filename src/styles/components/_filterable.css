@@ -25,7 +25,11 @@
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
-    background: #0C125D;
+    background: #0b48e4; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0b48e4 60%, #0c125d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #0b48e4 60%,#0c125d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #0b48e4 60%,#0c125d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b48e4', endColorstr='#0c125d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding: 60px;
 
     form{
@@ -55,7 +59,7 @@
       label{
         display: block;
         position: relative;
-        color: #FFC300;
+        color: white;
         font-size: 18px;
         margin-bottom: 5px;
       }
@@ -81,6 +85,7 @@
         padding: 0px 20px;
         border: 1px solid #FFC300;
         cursor: pointer;
+        border-radius: 50px;
       }
 
       .c-form-element__select.has-title ~ .c-form-element__submit{
@@ -88,9 +93,9 @@
       }
 
       .c-form-element__submit:hover{
-        background: #0C125D;
+        background: white;
         border: 1px solid white;
-        color: white;
+        color: #0C125D;
       }
 
       .c-form-element__checkboxes{

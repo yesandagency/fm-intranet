@@ -13,6 +13,7 @@
     width: 100%;
     position: relative;
     margin: 0 auto;
+    padding-top: 120px;
 
   }
 
@@ -24,45 +25,73 @@
 
     h2{
       font-family: "ABCArizonaMix";
-      font-size: 45px;
-      line-height: 56px;
+      font-size: 35px;
+      line-height: 48px;
       color: #FFC300;
       position: relative;
       margin-bottom: 20px;
+
+      span{
+        font-size: 14px;
+        font-family: "LibreFranklin";
+        color: white;
+        font-weight: 300;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        display: block;
+        position: relative;
+      }
+    }
+
+    h3{
+      font-size: 18px;
+      font-family: "LibreFranklin";
+      color: white;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
 
     p{
-      font-size: 18px;
+      font-size: 16px;
       color: white;
       line-height: 32px;
-      margin-bottom: 45px;
+      margin-bottom: 15px;
     }
 
     a{
-      height: 40px;
       width: auto;
       display: inline-block;
-      padding: 0px 20px;
-      border: 1px solid #0C125D;
-      background: #FFC300;
-      color: #0C125D;
-      line-height: 40px;
+      color: #FFC300;
       text-transform: uppercase;
       text-align: center;
-      margin-bottom: 5px;
+      font-size: 14px;
+
+      svg{
+        display: inline;
+        margin-left: calc(15px / 2);
+
+        path{
+          fill: #FFC300;
+        }
+      }
     }
 
     a:hover{
-        color: white;
-        background: #0C125D;
-        border: 1px solid white;
+      color: white;
+
+      svg{
+
+        path{
+          fill: white;
+        }
+      }
     }
 
   }
 
   &-content{
     width: 40%;
-    padding-right: 30px;
+    padding-right: 60px;
   }
 
   &-image{
@@ -72,9 +101,11 @@
 
     &-thumbnail{
       display: block;
-      position: relative;
+      position: absolute;
       text-align: right;
       z-index: 2;
+      right: 45px;
+      top: -120px;
     }
 
     &-thumbnail > div{
@@ -103,6 +134,7 @@
       display: block;
       z-index: 1;
       min-height: 435px;
+      height: 100%;
       border: 2px solid white;
     }
 
@@ -110,7 +142,7 @@
 
   &-image::after{
      content: "";
-     background: #0B48E4 url(/_resources/images/images/bg_Illus_BellTower-Top-black.svg) center right no-repeat;
+     background: #0B48E4;
      background-size: contain;
      height: calc(100% + 250px);
      width: calc(50% + ((100vw - 80rem) / 2));
@@ -122,12 +154,12 @@
   }
 
   &-image.top .c-feature-display-image-thumbnail{
-    padding-right: 30px;
+    /* padding-right: 30px; */
   }
 
-  &-image.top .c-feature-display-image-large{
+  /* &-image.top .c-feature-display-image-large{
     margin-top: -120px;
-  }
+  } */
 
   &-image.right .c-feature-display-image-thumbnail{
     position: absolute;
@@ -178,6 +210,10 @@
 
   .c-feature-display{
     padding: 45px 30px;
+  }
+
+  .c-feature-display-wrapper{
+    padding-top: 0px;
   }
 
   .c-feature-display-image{

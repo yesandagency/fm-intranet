@@ -1,0 +1,99 @@
+---
+layout: main.html
+bodyClass: homepage
+components:
+
+- name: hero-slim
+  heading: 'F&M Finance'
+  breadcrumbs:
+    - title: Home
+      link: '#'
+
+- name: quicklinks
+  title: 'F&M Finance'
+  background: 'light'
+  description: '
+  The Finance division at F&M oversees the financial responsibilities of the College, which include budget and financial planning, investments and endowment, debt management, and stewardship of financial resources.
+  '
+  list:
+    - caption: 'Budget & Financial Planning'
+      url: '#'
+    - caption: 'Accounting'
+      url: '#'
+    - caption: 'Accounts Payable'
+      url: '#'
+    - caption: 'Payroll'
+      url: '#'
+    - caption: 'Lorem ipsum dolor amet consectetur'
+      url: '#'
+    - caption: 'Lorem ipsum dolor sit amet'
+      url: '#'
+
+- name: fifty-fifty
+  background: 'mid'
+  type1: 'fifty-fifty-type-html'
+  type2: 'fifty-fifty-type-html'
+  html1: '
+  <h2>Finance Updates</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+  '
+  html2: '
+  <a href="#" class="button">Finance SSB9 Training and Reference Materials</a>
+  <a href="#" class="button">Cognos Report Training Documentation</a>
+  '
+
+
+- name: accordion
+  title: 'Important Year End Information'
+  contents:
+    - heading: 'One Page Summary Document '
+      type: 'one-col'
+      description: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      '
+    - heading: 'Purchasing: Requisitions and Purchase Orders'
+      type: 'one-col'
+      description: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      '
+    - heading: 'Expense Reimbursements through DiploMart:'
+      type: 'one-col'
+      description: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      '
+    - heading: 'Invoice Processing:'
+      type: 'one-col'
+      description: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      '
+    - heading: 'P-Card:'
+      type: 'one-col'
+      description: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      '
+    - heading: 'Budget Year-End Processing:'
+      type: 'one-col'
+      description: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      '
+    - heading: 'Accounting Team Message:'
+      type: 'one-col'
+      description: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      '
+
+- name: call-to-action
+  title: 'Call to Action'
+  caption: 'Lorem ipsum dolor sit amet, consetetur sadipscing.'
+  link: '#'
+
+
+
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

@@ -4,8 +4,7 @@
   height: auto;
   padding: 45px 60px;
   width: 100%;
-  background: #F9F9F9;
-  border-top: 2px dashed #FFC300;
+  background: white;
 
   &-wrapper{
     max-width: 80rem;
@@ -21,13 +20,12 @@
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url('/_resources/images/images/three-up-feature-ring.svg') center center no-repeat;
     min-height: 110px;
     margin-bottom: 0px;
 
 
     h2{
-      font-size: 45px;
+      font-size: 35px;
       text-align: center;
       font-weight: 700;
       color: #0C125D;

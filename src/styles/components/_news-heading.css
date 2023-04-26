@@ -13,20 +13,38 @@
 
     > a{
       background: #FFC300;
-      border: 1px solid black;
+      border: 1px solid #FFC300;
       color: black;
       text-transform: uppercase;
       padding: 0px 15px;
-      line-height: 40px;
-      height: 40px;
+      border-radius: 50px;
+      line-height: 50px;
+      height: 50px;
       display: inline-block;
       position: relative;
+
+      svg{
+        transform: rotate(180deg);
+        display: inline;
+        position: relative;
+
+        path{
+          fill: black;
+        }
+      }
     }
 
     > a:hover{
       color: white;
       background: #0C125D;
       border: 1px solid #0C125D;
+
+      svg{
+
+        path{
+          fill: white;
+        }
+      }
     }
 
     h2{

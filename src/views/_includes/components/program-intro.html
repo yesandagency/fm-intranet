@@ -1,0 +1,18 @@
+<div class="c-hero-program__intro-block">
+  <div class="c-hero-program__intro-container">
+    <div class="c-hero-program__intro-body">
+      <h2>{{ data.title }}</h2>
+      <p>{{ data.copy | safe }}</p>
+    </div>
+    {% if data.sidebarlinks %}
+    <div class="c-hero-program__sidebar sidebar">
+      <h3>{{ data.sidebarTitle }}</h3>
+      <hr>
+      {% for sidebarlink in data.sidebarlinks %}
+      <a href="{{ sidebarlink.link }}">{{ sidebarlink.title }} {% include '../../../assets/images/images/arrow-right-blue.svg' %}</a>
+      <hr>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

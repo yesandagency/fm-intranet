@@ -73,15 +73,3 @@
 }
 
 
-@media screen and (max-width: 768px){
-
-  .c-cta-text{
-    padding: 15px 35px;
-    font-size: 25px;
-  }
-
-  .c-cta-container {
-    padding: 30px 0px;
-  }
-
-}

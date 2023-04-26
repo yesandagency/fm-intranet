@@ -19,12 +19,11 @@
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url('/_resources/images/images/three-up-feature-ring.svg') center center no-repeat;
     min-height: 110px;
     margin-bottom: 45px;
 
     h2{
-      font-size: 45px;
+      font-size: 35px;
       text-align: center;
       font-weight: 700;
       color: #0C125D;
@@ -70,7 +69,7 @@
     }
 
     .fifty-fifty-type-cta{
-      background: #F9F9F9;
+      background: #E9E9E9;
       padding: 45px;
       margin-bottom: 30px !important;
       width: 100%;
@@ -109,6 +108,33 @@
         svg{
           path{
             fill: white;
+          }
+        }
+      }
+
+    }
+
+    .dark{
+      background: #0C125D;
+
+      h3{
+        font-size: 35px;
+        font-family: "ABCArizonaMix";
+        color: white;
+      }
+
+      p{
+        font-size: 16px;
+        color: white;
+      }
+
+      a:hover{
+        background: white;
+        color: #0C125D;
+
+        svg{
+          path{
+            fill: #0C125D;
           }
         }
       }
@@ -157,7 +183,7 @@
       }
 
       h2{
-        font-size: 45px;
+        font-size: 35px;
         font-family: "ABCArizonaMix";
         color: #0C125D;
         margin-bottom: 30px;
@@ -174,9 +200,9 @@
       a.button{
         border-radius: 50px;
         border: 0px;
-        padding: 0px 30px;
-        line-height: 50px;
-        height: 50px;
+        padding: 15px 30px;
+        line-height: 20px;
+        height: auto;
         font-size: 16px;
         font-weight: 300;
 
@@ -188,6 +214,7 @@
       }
 
       a.button:hover{
+        border: 0px;
 
         svg{
           path{
@@ -266,6 +293,11 @@
   }
 
 }
+.c-fifty-fifty.bg-mid{
+
+  background: #F9F9F9;
+
+}
 
 .c-fifty-fifty.special-split{
 
@@ -282,7 +314,10 @@
 
   .c-fifty-fifty{
     padding: 45px 30px;
+    margin: 20px 0px;
   }
+
+
 
   .c-fifty-fifty-container{
     display: block;
@@ -328,7 +363,13 @@
 
   .c-fifty-fifty-container > div:first-of-type,
   .c-fifty-fifty-container > div:last-of-type{
-    margin: 0px;
+    margin: 0px 0px 30px;
+    width: 100%;
+  }
+
+
+  .c-fifty-fifty-container > div:last-of-type{
+    margin-bottom: 0px;
   }
 
 }
