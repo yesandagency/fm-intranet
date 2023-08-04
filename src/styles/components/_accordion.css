@@ -32,6 +32,16 @@
       font-family: "ABCArizonaMix";
     }
   }
+
+  a{
+    color: #0B48E4;
+    text-decoration: underline;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
 }
 .c-accordion__contents{
   display: block;
