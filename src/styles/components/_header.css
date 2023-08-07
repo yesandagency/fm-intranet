@@ -82,6 +82,14 @@
   padding-top: 12.5px;
 }
 
+#menu-primary{
+
+  ul, ul li{
+    list-style: none !important;
+  }
+
+}
+
 .c-primary-menu-dropdown{
   background: #0B48E4 !important;
   width: 100%;
@@ -94,6 +102,10 @@
     padding-top: 50px;
     width: 100%;
     border-top: 2px dashed #ffc300;
+
+    li{
+      list-style: none !important;
+    }
 
     a{
       margin-right: 30px;
@@ -164,9 +176,12 @@
 
     ul{
 
+      list-style: none !important;
 
       li{
         margin-bottom: 10px;
+
+        list-style: none !important;
 
         a{
           color: white;
